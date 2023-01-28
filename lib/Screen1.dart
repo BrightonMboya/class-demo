@@ -1,23 +1,54 @@
 import 'package:flutter/material.dart';
+//import 'chips.dart';
+import 'top.dart';
+import 'HomePage.dart';
+
+// void main() => runApp(MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         primarySwatch: Colors.green,
+//       ),
+//       home: MyApp(),
+//     ));
 
 class Component1 extends StatelessWidget {
-  const Component1({super.key});
-
-  @override
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Second Route'),
+        title: const Text('Session Info'),
+        centerTitle: true,
+        backgroundColor: Colors.green[600],
+        actions: [
+          IconButton(
+              icon: const Icon(
+                Icons.edit,
+                color: Colors.white,
+              ),
+              onPressed: () {})
+        ],
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: const Text('Sewe Mjano'),
+              accountEmail: const Text('smjano@gmail.com'),
+              currentAccountPicture: new CircleAvatar(
+                backgroundImage: const NetworkImage(
+                    'https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+              ),
+            ),
+            ElevatedButton(onPressed: () {
+              Navigator.push(context,MaterialPageRoute(builder: (context) => const HomePage(),
+              ),);}, child: const Text('Home'))
+            // ListTile(
+            //   title: const Text('Home Page'),
+            // )
+          ],
         ),
       ),
+      body: TopApp(),
     );
   }
 }
