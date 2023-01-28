@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-//import 'chips.dart';
 import 'top.dart';
 import 'HomePage.dart';
 import 'screen2.dart';
 
-// void main() => runApp(MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       theme: ThemeData(
-//         primarySwatch: Colors.green,
-//       ),
-//       home: MyApp(),
-//     ));
 
 class Component1 extends StatelessWidget {
   @override

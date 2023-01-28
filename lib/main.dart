@@ -19,9 +19,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.green,
         ),
         home: Scaffold(
-          // appBar: AppBar(
-          //   title: const Text("Class Demo"),
-          // ),
           body: Column(
             children: const [HomePage()],
           ),

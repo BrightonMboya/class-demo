@@ -1,35 +1,9 @@
 import 'package:flutter/material.dart';
 
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Assignment 1',
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//       home: const MyHomePage(title: 'Week 2 Session 2'),
-//     );
-//   }
-// }
-
-// class MyHomePage extends StatefulWidget {
-//   const MyHomePage({super.key, required this.title});
-
-//   final String title;
-
-//   @override
-//   State<MyHomePage> createState() => _MyHomePageState();
-// }
-
 class Section2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return 
-    // Column(children: <Widget>[
+    return Column(children: <Widget>[
       Container(
           decoration: BoxDecoration(
               color: Colors.grey[100],
@@ -38,13 +12,13 @@ class Section2 extends StatelessWidget {
               ),
               borderRadius: const BorderRadius.all(Radius.circular(20))),
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
-          margin: const EdgeInsets.fromLTRB(20, 20, 20, 10),
+          margin: const EdgeInsets.fromLTRB(20, 10, 20, 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                   width: 300,
-                  // height: 50,
+                  height: 30,
                   color: Colors.grey[100],
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -52,14 +26,14 @@ class Section2 extends StatelessWidget {
                         Text(
                           'General',
                           style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 26),
+                              fontWeight: FontWeight.bold, fontSize: 20),
                         ),
                       ])
                   // )
                   ),
               Container(
                   width: 300,
-                  // height: 50,
+                  height: 30,
                   color: Colors.grey[100],
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -84,7 +58,7 @@ class Section2 extends StatelessWidget {
               ),
               Container(
                   width: 300,
-                  // height: 50,
+                  height: 30,
                   color: Colors.grey[100],
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -109,7 +83,7 @@ class Section2 extends StatelessWidget {
               ),
               Container(
                   width: 300,
-                  // height: 50,
+                  height: 30,
                   color: Colors.grey[100],
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -134,7 +108,7 @@ class Section2 extends StatelessWidget {
               ),
               Container(
                   width: 300,
-                  // height: 50,
+                  height: 30,
                   color: Colors.grey[100],
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -151,75 +125,8 @@ class Section2 extends StatelessWidget {
                   // )
                   ),
             ],
-          ));
-      // Container(
-          decoration: BoxDecoration(
-              color: Colors.grey[100],
-              border: Border.all(
-                color: const Color.fromARGB(255, 236, 234, 234),
-              ),
-              borderRadius: const BorderRadius.all(Radius.circular(20))),
-          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
-          margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                  width: 300,
-                  // height: 50,
-                  color: Colors.grey[100],
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const <Widget>[
-                        Text(
-                          'Additional',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 26),
-                        ),
-                      ])
-                  // )
-                  ),
-              Container(
-                  width: 300,
-                  // height: 50,
-                  color: Colors.grey[100],
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const <Widget>[
-                        Text(
-                          'Therapist Notes: ',
-                          style: TextStyle(fontWeight: FontWeight.w600),
-                        ),
-                      ])
-                  // )
-                  ),
-              const SizedBox(
-                height: 1,
-                child: DecoratedBox(
-                  decoration:
-                      BoxDecoration(color: Color.fromARGB(115, 243, 236, 236)),
-                ),
-              ),
-              Container(
-                  width: 300,
-                  // height: 50,
-                  color: Colors.grey[100],
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const <Widget>[
-                        Expanded(
-                          child: Text(
-                            'Tom showed nine symptoms of major depression for at least two weeks: depressed mood, weight loos, insomnia, restlessness, loss of energy, extreme guilt',
-                            // overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontWeight: FontWeight.normal),
-                          ),
-                        )
-                      ])
-                  // )
-                  ),
-            ],
           )),
-    // ]);
-    // );
+     
+    ]);
   }
 }
