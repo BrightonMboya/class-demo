@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'chips.dart';
+import 'screen2.dart';
 
 class TopApp extends StatelessWidget {
   @override
@@ -100,6 +101,7 @@ class TopApp extends StatelessWidget {
             )
           ],
         ),
+         Section2(),
       ],
     );
   }

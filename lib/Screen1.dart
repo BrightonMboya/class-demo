@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
-//import 'chips.dart';
 import 'top.dart';
 import 'HomePage.dart';
+import 'screen2.dart';
 
-// void main() => runApp(MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       theme: ThemeData(
-//         primarySwatch: Colors.green,
-//       ),
-//       home: MyApp(),
-//     ));
 
 class Component1 extends StatelessWidget {
   @override
@@ -39,16 +32,23 @@ class Component1 extends StatelessWidget {
                     'https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
               ),
             ),
-            ElevatedButton(onPressed: () {
-              Navigator.push(context,MaterialPageRoute(builder: (context) => const HomePage(),
-              ),);}, child: const Text('Home'))
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ),
+                  );
+                },
+                child: const Text('Home'))
             // ListTile(
             //   title: const Text('Home Page'),
             // )
           ],
         ),
       ),
-      body: TopApp(),
+      body: TopApp(), 
     );
   }
 }
