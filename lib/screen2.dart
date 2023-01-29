@@ -43,7 +43,7 @@ class Section2 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                         Text(
-                          'Tom',
+                          'Sewe',
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                       ])
@@ -68,7 +68,7 @@ class Section2 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                         Text(
-                          'Stuart',
+                          'Mjano',
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                       ])
@@ -93,7 +93,7 @@ class Section2 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                         Text(
-                          '07 June 1995',
+                          '07 June 1998',
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                       ])
@@ -118,7 +118,7 @@ class Section2 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                         Text(
-                          'Male',
+                          'Female',
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                       ])

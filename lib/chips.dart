@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
+// Map to hold the choices of the filter xchips
 enum ExerciseFilter { fever, insomnia, sweating, apathy, coughing }
 
+
+// Stateful widget to define the filter chips on the page
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({super.key});
 
@@ -50,9 +53,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           }).toList(),
         ),
         const SizedBox(height: 10.0),
+        // Text that shows the selections of the user
         Text('You have selected: ${_filters.join(', ')}')
       ],
     );
   }
-  // Stateful widget code here
+  
 }

@@ -8,12 +8,14 @@ class TopApp extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // Fitted Box for the profile section that conatins the user image and short bio
         FittedBox(
-          alignment: Alignment(-1.0, 1.0),
+          alignment: const Alignment(-1.0, 1.0),
           child: Row(
             children: <Widget>[
+              // Container to hold the profile image of the user
               Container(
-                margin: EdgeInsets.all(20),
+                margin: const EdgeInsets.all(20),
                 child: const CircleAvatar(
                   radius: 50,
                   backgroundImage: NetworkImage(
@@ -21,13 +23,14 @@ class TopApp extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 20),
+                // Container to hold short bio of the user
+                margin: const EdgeInsets.only(left: 20),
                 alignment: Alignment.topLeft,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 5.0),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 5.0),
                       child: Text(
                         'Sewe Mjano',
                         style: TextStyle(
@@ -36,8 +39,8 @@ class TopApp extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 5.0),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 5.0),
                       child: Text(
                         '25 years old . Anxiety . Takes Meds',
                         style: TextStyle(
@@ -59,8 +62,8 @@ class TopApp extends StatelessWidget {
             ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(20.0),
+        const Padding(
+          padding: EdgeInsets.all(20.0),
           child: Text('Complaints',
               style: TextStyle(
                 fontFamily: 'Open Sans',
@@ -68,12 +71,13 @@ class TopApp extends StatelessWidget {
                 color: Colors.black,
               )),
         ),
+        // Calling the stateful widget that holds the filter chips
         const MyStatefulWidget(),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: [
+          children: const [
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
               child: Text('Information',
                   style: TextStyle(
                     fontFamily: 'Open Sans',
@@ -82,7 +86,7 @@ class TopApp extends StatelessWidget {
                   )),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
               child: Text('Medicine',
                   style: TextStyle(
                     fontFamily: 'Open Sans',
@@ -91,7 +95,7 @@ class TopApp extends StatelessWidget {
                   )),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
               child: Text('Diagnosis',
                   style: TextStyle(
                     fontFamily: 'Open Sans',
