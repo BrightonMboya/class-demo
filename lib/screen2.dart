@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 
+// Start the root class to extend statelesswidget
 class Section2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    // use column to return the main content in containers vertically
     return Column(children: <Widget>[
+
+      // Creating the first container of content
       Container(
+        // styling the container
           decoration: BoxDecoration(
               color: Colors.grey[100],
               border: Border.all(
@@ -16,6 +22,8 @@ class Section2 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+
+              // creating the nested container for the main title 
               Container(
                   width: 300,
                   height: 30,
@@ -29,7 +37,6 @@ class Section2 extends StatelessWidget {
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
                       ])
-                  // )
                   ),
               Container(
                   width: 300,
@@ -47,7 +54,6 @@ class Section2 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                       ])
-                  // )
                   ),
               const SizedBox(
                 height: 1,
@@ -97,7 +103,6 @@ class Section2 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.normal),
                         ),
                       ])
-                  // )
                   ),
               const SizedBox(
                 height: 1,
